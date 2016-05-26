@@ -212,6 +212,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\Common.css" />
     <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_glass_55_fbf9ee_1x400.png" />
@@ -269,6 +270,41 @@
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <None Include="Scripts\jquery-1.8.2.intellisense.js" />
+    <Content Include="Scripts\App\app.gridNess.js" />
+    <Content Include="Scripts\App\app.main.js" />
+    <Content Include="Scripts\Common\app.style.css" />
+    <Content Include="Scripts\Common\common.js" />
+    <Content Include="Scripts\Common\gridNess.css" />
+    <Content Include="Scripts\Common\gridNess.js" />
+    <Content Include="Scripts\Common\i\button.background.gif" />
+    <Content Include="Scripts\Common\i\button.background.h30.gif" />
+    <Content Include="Scripts\Common\i\button.background.h30.over.gif" />
+    <Content Include="Scripts\Common\i\button.background.off.gif" />
+    <Content Include="Scripts\Common\i\buttonDivDark.background.gif" />
+    <Content Include="Scripts\Common\i\buttonDivDark.background.over.gif" />
+    <Content Include="Scripts\Common\i\button_estado.background.gif" />
+    <Content Include="Scripts\Common\i\button_estado.background.over.gif" />
+    <Content Include="Scripts\Common\i\button_over.background.gif" />
+    <Content Include="Scripts\Common\i\dot.gif" />
+    <Content Include="Scripts\Common\i\estado_amarillo.gif" />
+    <Content Include="Scripts\Common\i\estado_azul.gif" />
+    <Content Include="Scripts\Common\i\estado_rojo.gif" />
+    <Content Include="Scripts\Common\i\estado_verde.gif" />
+    <Content Include="Scripts\Common\i\flecha.gif" />
+    <Content Include="Scripts\Common\i\flecha_orden_desc.gif" />
+    <Content Include="Scripts\Common\i\indicator.gif" />
+    <Content Include="Scripts\Common\i\indicator_background.green.gif" />
+    <Content Include="Scripts\Common\i\orden_desc.png" />
+    <Content Include="Scripts\Common\i\status_background.gif" />
+    <Content Include="Scripts\Common\i\th_background.gif" />
+    <Content Include="Scripts\Common\i\th_background_bright.gif" />
+    <Content Include="Scripts\Common\i\th_background_dark.gif" />
+    <Content Include="Scripts\Common\i\th_background_light.gif" />
+    <Content Include="Scripts\Common\i\th_background_telerik.gif" />
+    <Content Include="Scripts\Common\i\top_bg.gif" />
+    <Content Include="Scripts\Common\i\top_bg.jpg" />
+    <Content Include="Scripts\Common\i\tr_selek_background.gif" />
+    <Content Include="Scripts\Common\i\unnamed.png" />
     <Content Include="Scripts\jquery-1.8.2.js" />
     <Content Include="Scripts\jquery-1.8.2.min.js" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
@@ -283,6 +319,8 @@
     <Content Include="Scripts\knockout-2.2.0.debug.js" />
     <Content Include="Scripts\knockout-2.2.0.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Scripts\vue.js" />
+    <Content Include="Scripts\vue.min.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

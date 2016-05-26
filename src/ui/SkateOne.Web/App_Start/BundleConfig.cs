@@ -38,6 +38,20 @@ namespace SkateOne.Web
                         "~/Content/themes/base/jquery.ui.datepicker.css",
                         "~/Content/themes/base/jquery.ui.progressbar.css",
                         "~/Content/themes/base/jquery.ui.theme.css"));
+
+            bundles.Add(new StyleBundle("~/Content/common").Include("~/Content/Common.css"));
+
+            bundles.Add(new ScriptBundle("~/bundles/vue").Include(
+                "~/Scripts/vue.js"));
+
+            bundles.Add(new ScriptBundle("~/bundles/common").Include(
+                "~/Scripts/Common/common.js"));
+
+            bundles.Add(new ScriptBundle("~/bundles/gridNess").Include(
+                "~/Scripts/Common/gridNess.js"));
+
+            bundles.Add(new StyleBundle("~/gridNess").Include("~/Scripts/Common/gridNess.css"));
+
         }
     }
 }
