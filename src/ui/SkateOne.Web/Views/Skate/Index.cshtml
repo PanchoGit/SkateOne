@@ -2,9 +2,22 @@
     ViewBag.Title = "Index";
 }
 
-<h1 class="title">Simple DataGrid</h1>
-<div id="grid1Div" style="width:920px;height:320px;overflow:auto;background-color:#DEDEDE;"></div>
-<div id="learnDiv" style="width:700px;padding-bottom:50px">
-    <script type="text/javascript" src="~/Scripts/App/app.gridNess.js"></script>
-    <script type="text/javascript" src="~/Scripts/App/app.main.js"></script>
+    <h1 class="title">Skate</h1>
+
+    <div id="skate" align="center">
+        <p>{{message}}</p>
+    </div>
+
+
+<div id="slide1" class="app scale2" style="display: none; -ms-opacity: 0; opacity: 0;">
+    <button class="button" style="position: absolute; margin: auto; top: 30px; left: 0px; right: 0px;" onclick="goHomeClick()">Home</button>
+    <input name="userName" style="position: absolute; top: 80px; left: 50%; width: 400px; margin-left: -225 px" />
+    <div id="grid1Div" style="width:920px;height:320px;overflow:auto;background-color:#DEDEDE; top: 150px; left: 50%; margin-left: -460px; position:absolute"></div>
 </div>
+<div id="home" class="app">
+    <button class=" button" style="position: absolute; margin: auto; top: 0px; bottom: 0px; left:0px;right:0px;" onclick="startClick()">
+    Start</button>
+</div>
+
+<script type="text/javascript" src="~/Scripts/App/app.gridNess.js"></script>
+<script type="text/javascript" src="~/Scripts/App/Skate.js"></script>

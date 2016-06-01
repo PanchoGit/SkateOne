@@ -10,7 +10,16 @@ var rows = [
         { data: "Tommy Lee Jones" }
     ],
     [
-        { data: "1522", style: "font-weight:bold;" },
+        { data: "1523", style: "font-weight:bold;" },
+        { data: "Adobe Flash CS3" },
+        { data: "FLASH 10" },
+        { data: "2" },
+        { data: "Norma" },
+        { data: "Tecnología informática" },
+        { data: "Francis Ford Copolla" }
+    ],
+    [
+        { data: "1523", style: "font-weight:bold;" },
         { data: "Adobe Flash CS3" },
         { data: "FLASH 10" },
         { data: "2" },
