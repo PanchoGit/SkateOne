@@ -330,3 +330,7 @@ h2 {
 }
 .folders li { *display: inline !important; } /* IE7 only */
 .folders .selected { background-color: #444 !important; color: white; text-shadow:none; border-right-color: #aaa; border-left: none; box-shadow:inset 1px 2px 6px #070707; } 
+
+fieldset {
+    border: 0 #003366 none;
+}
