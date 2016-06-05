@@ -1,0 +1,6 @@
+﻿GRANT CONNECT TO [SkateU];
+
+
+GO
+GRANT CONNECT TO [SkateReportU];
+

@@ -51,15 +51,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DataMap\SkateMap.cs" />
+    <Compile Include="DataMap\SkaterMap.cs" />
     <Compile Include="Data\IRepositoryBase.cs" />
-    <Compile Include="Data\ISkateData.cs" />
+    <Compile Include="Data\ISkaterData.cs" />
     <Compile Include="Data\RepositoryBase.cs" />
-    <Compile Include="Data\SkateData.cs" />
-    <Compile Include="Model\Skate.cs" />
+    <Compile Include="Data\SkaterData.cs" />
+    <Compile Include="Model\Skater.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Service\ISkateService.cs" />
-    <Compile Include="Service\SkateService.cs" />
+    <Compile Include="Service\ISkaterService.cs" />
+    <Compile Include="Service\SkaterService.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

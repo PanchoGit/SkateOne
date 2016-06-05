@@ -3,8 +3,8 @@ using SkateOne.Application.Model;
 
 namespace SkateOne.Application.Service
 {
-    public interface ISkateService
+    public interface ISkaterService
     {
-        IEnumerable<Skate> GetAll();
+        IEnumerable<Skater> GetAll();
     }
 }

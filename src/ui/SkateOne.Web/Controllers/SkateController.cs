@@ -5,9 +5,9 @@ namespace SkateOne.Web.Controllers
 {
     public class SkateController : Controller
     {
-        private readonly ISkateService service;
+        private readonly ISkaterService service;
 
-        public SkateController(ISkateService service)
+        public SkateController(ISkaterService service)
         {
             this.service = service;
         }

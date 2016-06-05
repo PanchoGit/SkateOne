@@ -11,7 +11,7 @@ namespace SkateOne.Web
         {
             return Fluently.Configure()
                 .Database(MsSqlConfiguration.MsSql2012.ConnectionString(_ => _.FromConnectionStringWithKey("default")))
-                .Mappings(m => m.FluentMappings.AddFromAssemblyOf<SkateData>())
+                .Mappings(m => m.FluentMappings.AddFromAssemblyOf<SkaterData>())
                 .BuildSessionFactory();
         }
     }

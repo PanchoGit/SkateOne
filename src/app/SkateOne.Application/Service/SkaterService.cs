@@ -4,16 +4,16 @@ using SkateOne.Application.Model;
 
 namespace SkateOne.Application.Service
 {
-    public class SkateService : ISkateService
+    public class SkaterService : ISkaterService
     {
-        private readonly ISkateData data;
+        private readonly ISkaterData data;
 
-        public SkateService(ISkateData data)
+        public SkaterService(ISkaterData data)
         {
             this.data = data;
         }
 
-        public IEnumerable<Skate> GetAll()
+        public IEnumerable<Skater> GetAll()
         {
             return data.GetAll();
         }

@@ -1,6 +1,6 @@
 ﻿namespace SkateOne.Application.Model
 {
-    public class Skate
+    public class Skater
     {
         public virtual int Id { get; set; }
 

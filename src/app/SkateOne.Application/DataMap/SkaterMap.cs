@@ -3,9 +3,9 @@ using SkateOne.Application.Model;
 
 namespace SkateOne.Application.DataMap
 {
-    public class SkateMap : ClassMap<Skate>
+    public class SkaterMap : ClassMap<Skater>
     {
-        public SkateMap()
+        public SkaterMap()
         {
             Id(x => x.Id);
             Map(x => x.Name);

@@ -3,16 +3,16 @@ using SkateOne.Application.Model;
 
 namespace SkateOne.Application.Data
 {
-    public class SkateData : ISkateData
+    public class SkaterData : ISkaterData
     {
-        private readonly IRepositoryBase<Skate> repositaryBase;
+        private readonly IRepositoryBase<Skater> repositaryBase;
 
-        public SkateData(IRepositoryBase<Skate> repositaryBase)
+        public SkaterData(IRepositoryBase<Skater> repositaryBase)
         {
             this.repositaryBase = repositaryBase;
         }
 
-        public IEnumerable<Skate> GetAll()
+        public IEnumerable<Skater> GetAll()
         {
             return repositaryBase.GetAll();
         }
