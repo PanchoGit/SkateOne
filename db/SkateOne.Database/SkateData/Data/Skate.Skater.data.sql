@@ -9,3 +9,7 @@ INSERT INTO [Skate].[Skater] ([Id], [Name], [Brand], [Stance]) VALUES (7, N'Arto
 INSERT INTO [Skate].[Skater] ([Id], [Name], [Brand], [Stance]) VALUES (8, N'Nyjah Huston', N'Element', N'Regular')
 INSERT INTO [Skate].[Skater] ([Id], [Name], [Brand], [Stance]) VALUES (9, N'Tony Hawk', N'Birdhouse', N'Goofy')
 SET IDENTITY_INSERT [Skate].[Skater] OFF
+
+--INSERT INTO [Skate].[Skater] ([Name], [Brand], [Stance]) VALUES (N'ρΡ&%αινσϊδλοφό~?5', N'One', N'Regular')
+--INSERT INTO [Skate].[Skater] ([Name], [Brand], [Stance]) VALUES (N'????', N'?????', N'Goofy')
+--INSERT INTO [Skate].[Skater] ([Name], [Brand], [Stance]) VALUES (N'?????', N'??????', N'Regular')
