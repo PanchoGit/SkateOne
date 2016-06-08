@@ -150,6 +150,14 @@ h2 {
                  0 2px 6px #555555;
 }
 
+.scale1 {
+    -ms-transform: scale(1,1); /* IE 9 */
+    -webkit-transform: scale(1,1); /* Safari */
+    -moz-transform: scale(1,1);
+    -o-transform: scale(1,1);
+    transform: scale(1,1);
+}
+
 .scale2 {
     -ms-transform: scale(2,2); /* IE 9 */
     -webkit-transform: scale(2,2); /* Safari */
