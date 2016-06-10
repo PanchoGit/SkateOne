@@ -1,6 +1,8 @@
 ﻿using System;
+using System.Reflection;
 using Autofac;
 using Autofac.Integration.Mvc;
+using Autofac.Integration.WebApi;
 using NHibernate;
 using SkateOne.Application.Data;
 
@@ -14,6 +16,8 @@ namespace SkateOne.Web
         public static void Autofac(ContainerBuilder builder)
         {
             builder.RegisterControllers(typeof(MvcApplication).Assembly);
+
+            builder.RegisterApiControllers(typeof(MvcApplication).Assembly);
 
             builder.RegisterAssemblyTypes(AppDomain.CurrentDomain.GetAssemblies())
                 .Where(s => s.Name.EndsWith(ServiceAssemblyEndName))
