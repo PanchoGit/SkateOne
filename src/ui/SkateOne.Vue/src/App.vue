@@ -15,9 +15,8 @@
 
 <div id="login"  class="app scale2 app-hide">
   <div class="app-center" style="width: 500px; height: 400px;" align="center">
-      <h2>Login</h2>
-
-      <button class=" button" v-on:click="loginStartClick()">Login</button>
+      <login-component></login-component>
+      <button class=" button" v-on:click="loginStartClick()" style="position:absolute; top:200px">Login</button>
   </div>
 </div>
 
@@ -31,6 +30,9 @@ export default {
     return {
       currentViewName: ''
     }
+  },
+  components: {
+    LoginComponent
   },
   ready: function () {
     this.showView('login');
