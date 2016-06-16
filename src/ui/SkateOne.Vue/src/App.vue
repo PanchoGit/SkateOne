@@ -1,29 +1,24 @@
 <template>
 
 <div id="home" class="app scale2 app-hide">
-    <button class=" button" style="position: absolute; margin: auto; top: 0px; bottom: 0px; left: 0px; right: 0px;" v-on:click="startClick">
-        Start
-    </button>
-    <p style="color: #999999">{{message}}</p>
+  <home-component></home-component>
 </div>
 
 <div id="skateView" class="app scale2 app-hide">
-    <button class="button" style="position: absolute; margin: auto; top: 30px; left: 0px; right: 0px;" v-on:click="goHomeClick">Home</button>
-    <input name="userName" style="position: absolute; top: 80px; left: 50%; width: 400px; margin-left: -225px" />
-    <div id="grid1Div" style="width:920px;height:320px;overflow:auto;background-color:#DEDEDE; top: 150px; left: 50%; margin-left: -460px; position:absolute"></div>
+  <skate-component></skate-component>
 </div>
 
 <div id="login"  class="app scale2 app-hide">
-  <div class="app-center" style="width: 500px; height: 400px;" align="center">
-      <login-component></login-component>
-      <button class=" button" v-on:click="loginStartClick()" style="position:absolute; top:200px">Login</button>
-  </div>
+  <login-component></login-component>
 </div>
 
 </template>
 
 <script>
-import LoginComponent from './Login.vue'
+import Vue from 'vue'
+import LoginComponent from './components/Login.vue'
+import HomeComponent from './components/Home.vue'
+import SkateComponent from './components/Skate.vue'
 
 export default {
   data () {
@@ -32,7 +27,9 @@ export default {
     }
   },
   components: {
-    LoginComponent
+    LoginComponent,
+    HomeComponent,
+    SkateComponent
   },
   ready: function () {
     this.showView('login');
@@ -60,20 +57,14 @@ export default {
             item.style.display = "none";
           }
         });
-      },
-      startClick:function() {
-          this.showView("skateView");
-      },
-      goHomeClick:function() {
-          this.showView("home");
-      },
-      loginStartClick:function() {
-          this.showView("skateView");
       }
+  },
+  events: {
+    'menu': function (view) {
+      this.showView(view);
+    }
   }
 }
 </script>
 
-<style>
-
-</style>
+<style></style>

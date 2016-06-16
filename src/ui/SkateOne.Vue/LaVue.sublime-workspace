@@ -4,6 +4,14 @@
 		"selected_items":
 		[
 			[
+				"Skate",
+				"SkateComponent"
+			],
+			[
+				"Home",
+				"HomeComponent"
+			],
+			[
 				"Login",
 				"LoginComponent"
 			]
@@ -12,27 +20,38 @@
 	"buffers":
 	[
 		{
-			"file": "src/main.js",
-			"settings":
-			{
-				"buffer_size": 100,
-				"line_ending": "Unix"
-			}
-		},
-		{
 			"file": "src/App.vue",
 			"settings":
 			{
-				"buffer_size": 2249,
+				"buffer_size": 1599,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "index.html",
+			"file": "src/components/Home.vue",
 			"settings":
 			{
-				"buffer_size": 1073,
-				"line_ending": "Unix"
+				"buffer_size": 518,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "src/components/Login.vue",
+			"settings":
+			{
+				"buffer_size": 853,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "<template>\n	<h2>Skate View</h2>\n	<div class=\"app-center\" style=\"width: 500px; height: 500px;\" align=\"center\">\n		<div id=\"grid1Div\" style=\"width:920px;height:320px;overflow:auto;background-color:#DEDEDE; top: 150px; left: 50%; margin-left: -460px; position:absolute\"></div>\n	</div>\n	<button class=\"button\" style=\"position: absolute; margin: auto; bottom: 50px; left: 0px; right: 0px;\" v-on:click=\"goHomeView\">Home</button>\n</template>\n\n<style>\n</style>\n\n<script>\nmodule.exports = {\n	data: function(){\n		return {\n			msg: 'home'\n		}\n	},\n	ready: function(){\n		console.log(\"Skate.ready\");\n	},\n	methods: {\n		goHomeView: function () {\n			this.$dispatch('menu', 'home')\n		}\n	}\n\n}\n</script>",
+			"file": "src/components/Skate.vue",
+			"file_size": 709,
+			"file_write_time": 131105736384330932,
+			"settings":
+			{
+				"buffer_size": 681,
+				"line_ending": "Windows"
 			}
 		}
 	],
@@ -43,18 +62,23 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 0.0,
-		"last_filter": "",
+		"height": 81.0,
+		"last_filter": "fileB",
 		"selected_items":
 		[
+			[
+				"fileB",
+				"View: Toggle Open Files in Side Bar"
+			]
 		],
-		"width": 0.0
+		"width": 432.0
 	},
 	"console":
 	{
-		"height": 0.0,
+		"height": 174.0,
 		"history":
 		[
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
 		]
 	},
 	"distraction_free":
@@ -71,10 +95,18 @@
 		"/C/Pancho/Projects/SkateOne/src/ui/SkateOne.Vue",
 		"/C/Pancho/Projects/SkateOne/src/ui/SkateOne.Vue/css",
 		"/C/Pancho/Projects/SkateOne/src/ui/SkateOne.Vue/lib",
-		"/C/Pancho/Projects/SkateOne/src/ui/SkateOne.Vue/src"
+		"/C/Pancho/Projects/SkateOne/src/ui/SkateOne.Vue/src",
+		"/C/Pancho/Projects/SkateOne/src/ui/SkateOne.Vue/src/components"
 	],
 	"file_history":
 	[
+		"/C/Pancho/Projects/SkateOne/src/ui/SkateOne.Vue/src/components/Home.vue",
+		"/C/Pancho/Projects/SkateOne/src/ui/SkateOne.Vue/src/components/Login.vue",
+		"/C/Pancho/Projects/SkateOne/src/ui/SkateOne.Vue/src/components/Skate.vue",
+		"/C/Pancho/Projects/SkateOne/src/ui/SkateOne.Vue/src/App.vue",
+		"/C/Users/francisco.rosales/AppData/Roaming/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/C/Pancho/Projects/SkateOne/src/ui/SkateOne.Vue/index.html",
+		"/C/Pancho/Projects/SkateOne/src/ui/SkateOne.Vue/src/main.js",
 		"/C/Pancho/Projects/SkateOne/src/ui/SkateOne.Vue/src/Login.vue",
 		"/C/Pancho/Projects/SkateOne/src/ui/SkateOne.Vue/lib/gridNess.css",
 		"/C/Pancho/Projects/SkateOne/src/ui/SkateOne.Vue/css/Common.css",
@@ -167,6 +199,11 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"goHomeClick",
+			"goSkateClick",
+			"skate-component",
+			"loginStartClick",
+			"LoginComponent",
 			"verde",
 			"/estado_",
 			"umbraco",
@@ -175,10 +212,12 @@
 		],
 		"highlight": true,
 		"in_selection": false,
-		"preserve_case": false,
+		"preserve_case": true,
 		"regex": false,
 		"replace_history":
 		[
+			"goHomeView",
+			"goSkateView",
 			"/status_"
 		],
 		"reverse": false,
@@ -190,29 +229,90 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 3,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "src/main.js",
+					"file": "src/App.vue",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 100,
+						"buffer_size": 1599,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								96,
-								96
+								432,
+								432
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
+							"syntax": "Packages/vue-syntax-highlight-master/vue.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 66.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "src/components/Home.vue",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 518,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								26,
+								12
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/vue-syntax-highlight-master/vue.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "src/components/Login.vue",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 853,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								29,
+								14
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/vue-syntax-highlight-master/vue.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -222,67 +322,39 @@
 					"type": "text"
 				},
 				{
-					"buffer": 1,
-					"file": "src/App.vue",
+					"buffer": 3,
+					"file": "src/components/Skate.vue",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2249,
+						"buffer_size": 681,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1048,
-								1048
+								525,
+								525
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/vue-syntax-highlight-master/vue.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true,
-							"word_wrap": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 314.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "index.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1073,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								797,
-								797
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true,
-							"word_wrap": false
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 0,
 					"type": "text"
 				}
+			]
+		},
+		{
+			"sheets":
+			[
 			]
 		}
 	],
@@ -292,7 +364,7 @@
 	},
 	"input":
 	{
-		"height": 0.0
+		"height": 38.0
 	},
 	"layout":
 	{
@@ -303,11 +375,18 @@
 				0,
 				1,
 				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
 			]
 		],
 		"cols":
 		[
 			0.0,
+			0.5,
 			1.0
 		],
 		"rows":
@@ -360,9 +439,9 @@
 	{
 	},
 	"show_minimap": true,
-	"show_open_files": true,
+	"show_open_files": false,
 	"show_tabs": true,
-	"side_bar_visible": true,
+	"side_bar_visible": false,
 	"side_bar_width": 216.0,
 	"status_bar_visible": true,
 	"template_settings":
