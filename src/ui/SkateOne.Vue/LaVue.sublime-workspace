@@ -44,14 +44,27 @@
 			}
 		},
 		{
-			"contents": "<template>\n	<h2>Skate View</h2>\n	<div class=\"app-center\" style=\"width: 500px; height: 500px;\" align=\"center\">\n		<div id=\"grid1Div\" style=\"width:920px;height:320px;overflow:auto;background-color:#DEDEDE; top: 150px; left: 50%; margin-left: -460px; position:absolute\"></div>\n	</div>\n	<button class=\"button\" style=\"position: absolute; margin: auto; bottom: 50px; left: 0px; right: 0px;\" v-on:click=\"goHomeView\">Home</button>\n</template>\n\n<style>\n</style>\n\n<script>\nmodule.exports = {\n	data: function(){\n		return {\n			msg: 'home'\n		}\n	},\n	ready: function(){\n		console.log(\"Skate.ready\");\n	},\n	methods: {\n		goHomeView: function () {\n			this.$dispatch('menu', 'home')\n		}\n	}\n\n}\n</script>",
 			"file": "src/components/Skate.vue",
-			"file_size": 709,
-			"file_write_time": 131105736384330932,
 			"settings":
 			{
 				"buffer_size": 681,
 				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "index.html",
+			"settings":
+			{
+				"buffer_size": 1073,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "package.json",
+			"settings":
+			{
+				"buffer_size": 934,
+				"line_ending": "Unix"
 			}
 		}
 	],
@@ -100,21 +113,34 @@
 	],
 	"file_history":
 	[
+		"/C/Pancho/Projects/SkateOne/src/ui/SkateOne.Vue/node_modules/gulp-build/gulpfile.js",
+		"/C/Pancho/Projects.GL/Mitel/dev_portal/Src/Mitel.DeveloperPortal/Mitel.devPortal.FrontEnd/app/app.spec.js",
+		"/C/Pancho/Projects.GL/Mitel/dev_portal/Src/Mitel.DeveloperPortal/Mitel.devPortal.FrontEnd/app/app.e2e.js",
+		"/C/Pancho/Projects.GL/Mitel/dev_portal/Src/Mitel.DeveloperPortal/Mitel.devPortal.FrontEnd/app/app.js",
+		"/C/Pancho/Projects.GL/Mitel/dev_portal/Src/Mitel.DeveloperPortal/Mitel.devPortal.FrontEnd/app/styles/_bootstrap-custom.scss",
+		"/C/Pancho/Projects.GL/Mitel/dev_portal/Src/Mitel.DeveloperPortal/Mitel.devPortal.FrontEnd/app/styles/base.scss",
+		"/C/Pancho/Projects.GL/Mitel/dev_portal/Src/Mitel.DeveloperPortal/Mitel.devPortal.FrontEnd/app/services/accounts.js",
+		"/C/Pancho/Projects.GL/Mitel/dev_portal/Src/Mitel.DeveloperPortal/Mitel.devPortal.FrontEnd/app/configuration/options.js",
+		"/C/Pancho/Projects.GL/Mitel/dev_portal/Src/Mitel.DeveloperPortal/Mitel.devPortal.FrontEnd/app/configuration/i18n.js",
+		"/C/Pancho/Projects.GL/Mitel/dev_portal/Src/Mitel.DeveloperPortal/Mitel.devPortal.FrontEnd/app/configuration/constants.js",
+		"/C/Pancho/Projects/SkateOne/src/ui/SkateOne.Vue/.babelrc",
+		"/C/Pancho/Projects/SkateOne/src/ui/SkateOne.Vue/webpack.config.js",
+		"/C/Pancho/Projects/SkateOne/src/ui/SkateOne.Vue/package.json",
+		"/C/Pancho/Projects/SkateOne/src/ui/SkateOne.Vue/README.md",
+		"/C/Pancho/Projects/SkateOne/src/ui/SkateOne.Vue/src/main.js",
+		"/C/Pancho/Projects.GL/Mitel/dev_portal/Src/Mitel.DeveloperPortal/Mitel.devPortal.FrontEnd/gulpfile.js",
 		"/C/Pancho/Projects/SkateOne/src/ui/SkateOne.Vue/src/components/Home.vue",
 		"/C/Pancho/Projects/SkateOne/src/ui/SkateOne.Vue/src/components/Login.vue",
 		"/C/Pancho/Projects/SkateOne/src/ui/SkateOne.Vue/src/components/Skate.vue",
 		"/C/Pancho/Projects/SkateOne/src/ui/SkateOne.Vue/src/App.vue",
 		"/C/Users/francisco.rosales/AppData/Roaming/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
 		"/C/Pancho/Projects/SkateOne/src/ui/SkateOne.Vue/index.html",
-		"/C/Pancho/Projects/SkateOne/src/ui/SkateOne.Vue/src/main.js",
 		"/C/Pancho/Projects/SkateOne/src/ui/SkateOne.Vue/src/Login.vue",
 		"/C/Pancho/Projects/SkateOne/src/ui/SkateOne.Vue/lib/gridNess.css",
 		"/C/Pancho/Projects/SkateOne/src/ui/SkateOne.Vue/css/Common.css",
 		"/C/Pancho/Projects/SkateOne/src/ui/SkateOne.Vue/css/Site.css",
 		"/C/Pancho/Projects/SkateOne/src/ui/SkateOne.Web/Views/_ViewStart.cshtml",
 		"/C/Pancho/Projects/SkateOne/src/ui/SkateOne.Vue/LaVue/.gitignore",
-		"/C/Pancho/Projects/SkateOne/src/ui/SkateOne.Vue/README.md",
-		"/C/Pancho/Projects.GL/Mitel/dev_portal/Src/Mitel.DeveloperPortal/Mitel.devPortal.FrontEnd/gulpfile.js",
 		"/C/Pancho/Projects.GL/Mitel/dev_portal/Src/Mitel.DeveloperPortal/Mitel.devPortal.FrontEnd/app/components/lazyLoadNG.js",
 		"/C/Pancho/Projects.GL/Mitel/dev_portal/Src/Mitel.DeveloperPortal/Mitel.devPortal.FrontEnd/app/helpers/capitalize-filter.js",
 		"/C/Pancho/Projects.GL/Mitel/dev_portal/Src/Mitel.DeveloperPortal/Mitel.devPortal.FrontEnd/bower.json",
@@ -199,6 +225,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"node_modules",
+			"dev",
 			"goHomeClick",
 			"goSkateClick",
 			"skate-component",
@@ -229,7 +257,7 @@
 	"groups":
 	[
 		{
-			"selected": 3,
+			"selected": 4,
 			"sheets":
 			[
 				{
@@ -259,7 +287,7 @@
 						"translation.y": 66.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 5,
 					"type": "text"
 				},
 				{
@@ -288,7 +316,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 4,
 					"type": "text"
 				},
 				{
@@ -318,7 +346,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 3,
 					"type": "text"
 				},
 				{
@@ -334,8 +362,8 @@
 						"selection":
 						[
 							[
-								525,
-								525
+								451,
+								451
 							]
 						],
 						"settings":
@@ -347,14 +375,69 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1073,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								955,
+								955
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
 					"stack_index": 0,
 					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "package.json",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 934,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								234,
+								244
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
 				}
-			]
-		},
-		{
-			"sheets":
-			[
 			]
 		}
 	],
@@ -375,18 +458,11 @@
 				0,
 				1,
 				1
-			],
-			[
-				1,
-				0,
-				2,
-				1
 			]
 		],
 		"cols":
 		[
 			0.0,
-			0.5,
 			1.0
 		],
 		"rows":
@@ -441,7 +517,7 @@
 	"show_minimap": true,
 	"show_open_files": false,
 	"show_tabs": true,
-	"side_bar_visible": false,
+	"side_bar_visible": true,
 	"side_bar_width": 216.0,
 	"status_bar_visible": true,
 	"template_settings":
