@@ -43,10 +43,9 @@
     cursor:pointer;
 	-o-text-overflow: clip;
   	text-overflow: clip;
-
 	text-shadow: 0 1px 0 #555555,
 		0 2px 5px rgba(0,0,0,0.5);
-
+	text-align: center;
 
 	border-radius: 33px; 
 	-moz-border-radius: 33px; 

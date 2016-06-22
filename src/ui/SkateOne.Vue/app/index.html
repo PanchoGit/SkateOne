@@ -3,28 +3,29 @@
     <head>
         <meta charset="utf-8" />
         <title>LaVue</title>
-        <link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
+        <link href="./favicon.ico" rel="shortcut icon" type="image/x-icon" />
         <meta name="viewport" content="width=device-width" />
 
-        <script src="./dist/lib/jquery-1.8.2.js"></script>
-        <script src="./dist/lib/plugins/CSSPlugin.min.js"></script>
-        <script src="./dist/lib/easing/EasePack.min.js"></script>
-        <script src="./dist/lib/TweenLite.min.js"></script>
-        <script src="./dist/lib/GridNess.js"></script>
+        <script src="./lib/jquery-1.8.2.js"></script>
+        <script src="./lib/plugins/CSSPlugin.min.js"></script>
+        <script src="./lib/easing/EasePack.min.js"></script>
+        <script src="./lib/TweenLite.min.js"></script>
+        <script src="./lib/GridNess.js"></script>
 
-        <link rel="stylesheet" type="text/css" href="./dist/css/Common.css" />
-        <link rel="stylesheet" type="text/css" href="./dist/css/App.css" />
-        <link rel="stylesheet" type="text/css" href="./dist/css/GridNess.css" />
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" />
+        <link rel="stylesheet" type="text/css" href="./css/Common.css" />
+        <link rel="stylesheet" type="text/css" href="./css/App.css" />
+        <link rel="stylesheet" type="text/css" href="./css/GridNess.css" />
     </head>
 
 <body style="overflow:hidden">
-    <div id="waitDiv" class="statusBar wait statusText" align="center"><img src="./dist/i/indicator.gif" width="16" height="16">Loading...</div>
+    <div id="waitDiv" class="statusBar wait statusText" align="center"><img src="./i/indicator.gif" width="16" height="16">Loading...</div>
 
     <h1 class="mainTitle">LaVue</h1>
 
     <app></app>
 
-    <script src="./dist/build.js"></script>
-    <script src="./dist/lib/common.js"></script>
+    <script src="./dist/app.bundle.js"></script>
+    <script src="./lib/common.js"></script>
 </body>
 </html>

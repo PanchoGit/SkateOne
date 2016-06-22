@@ -15,7 +15,6 @@
 </template>
 
 <script>
-import Vue from 'vue'
 import LoginComponent from './components/Login.vue'
 import HomeComponent from './components/Home.vue'
 import SkateComponent from './components/Skate.vue'
