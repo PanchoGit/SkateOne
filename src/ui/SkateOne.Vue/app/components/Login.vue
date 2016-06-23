@@ -1,26 +1,26 @@
 <template>
 
-  <h2>Login</h2>
-  <div class="app-center" style="width: 500px; height: 150px;" align="center">
-    <form v-on:submit.prevent="login" class="form-horizontal">
-      <div class="form-group">
-        <label class="col-sm-2 control-label" for="username">Username</label>
-        <div class="col-sm-10 input-group">
-          <span class="input-addon">@</span>
-          <input type="text" class="input-with-addon" id="username" name="username" style="width: 300px" v-model="loginUser.email" />
-        </div>
+<h2>Login</h2>
+<div class="app-center" style="width: 500px; height: 150px;" align="center">
+  <form v-on:submit.prevent="login" class="form-horizontal">
+    <div class="form-group">
+      <label class="col-sm-2 control-label" for="username">Username</label>
+      <div class="col-sm-10 input-group">
+        <span class="input-addon">@</span>
+        <input type="text" class="input-with-addon" id="username" name="username" style="width: 300px" v-model="loginUser.email" />
       </div>
-      <div class="form-group">
-        <label class="col-sm-2 control-label" for="password">Password</label>
-        <div class="col-sm-10 input-group">
-          <span class="input-addon">*</span>
-          <input class="input-with-addon" id="password" name="password" style="width: 300px" type="password" v-model="loginUser.password" />
-        </div>
+    </div>
+    <div class="form-group">
+      <label class="col-sm-2 control-label" for="password">Password</label>
+      <div class="col-sm-10 input-group">
+        <span class="input-addon">*</span>
+        <input class="input-with-addon" id="password" name="password" style="width: 300px" type="password" v-model="loginUser.password" />
       </div>
-      <div class="form-group">
-        <button type="submit" name="" class="button">Login</button>
-      </div>
-    </form>
+    </div>
+    <div class="form-group">
+      <button type="submit" name="" class="button">Login</button>
+    </div>
+  </form>
 
 <alert
   :show.sync="showValidateAlert"
@@ -36,16 +36,14 @@
   </ul>
 </alert>
 
-  </div>
-
-  <!--<button class="button" style="position: absolute; margin: auto; bottom: 50px; left: 0px; right: 0px;" v-on:click="login">Login</button>-->
+</div>
 
 </template>
 
 <script>
 
 import {alert as Alert} from 'vue-strap'
-var emailRE = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+import validators from '../helpers/validators'
 
 export default {
   data () {
@@ -67,7 +65,7 @@ export default {
   computed: {
     validation: function () {
       return {
-        email: emailRE.test(this.loginUser.email),
+        email: validators.emailPattern.test(this.loginUser.email),
         password: !!this.loginUser.password.trim()
       }
     },

@@ -7,7 +7,7 @@
  *	@id = {string}
  * 		: optional (default = 'NessGrid')
  *		: id of the main table (<table id={id} ...)
- *	@containerDIV = {string}
+ *	@container = {string}
  *		: obligatory
  *		: div that while displayed the table
  *	@dataTable = {cols:[{Ness.Grid.Pojo.Column}],rows:[{Ness.Grid.Pojo.Row}]}
@@ -67,7 +67,7 @@ Ness.Elements = {
 }
 Ness.Grid = function(config){
 	this.id = "NessGrid";
-	this.containerDIV = "";
+	this.container = "";
 	this.dataTable = {};
 	this.onClick = function(){};
 	this.colId = 0;
@@ -100,8 +100,8 @@ Ness.Grid.prototype.display = function(){
 	gHtml = gHtml.replace("{widthCols}",this._getWidth2HTML());
 	gHtml = gHtml.replace("{column}",this._getTitle2HTML());
 	gHtml = gHtml.replace("{rows}",this._getRows2HTML());
-	$("#"+ this.containerDIV).html(gHtml);
-	$("#"+ this.containerDIV).css("display", "");
+	$("#"+ this.container).html(gHtml);
+	$("#"+ this.container).css("display", "");
 }
 Ness.Grid.prototype._getWidthTotal = function(){
 	var total = 0;
