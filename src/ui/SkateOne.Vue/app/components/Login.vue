@@ -1,20 +1,20 @@
 <template>
 
-<div class="app-center" style="width: 500px; height: 350px;" align="center">
-  <h2>Login</h2><br>
-  <form v-on:submit.prevent="login">
-    <fieldset>
-      <label>Username</label>
-      <input name="username" style="width: 300px" v-model="loginUser.email" />
-    </fieldset><br>
-    <fieldset>
-      <label>Password</label>
-      <input name="password" style="width: 300px" type="password" v-model="loginUser.password" />
-    </fieldset><br>
-    <fieldset>
-      <input type="submit" name="" class="button" value="Login">
-    </fieldset>
-  </form>
+  <div class="app-center" style="width: 500px; height: 350px;" align="center">
+    <h2>Login</h2><br>
+    <form v-on:submit.prevent="login">
+      <fieldset>
+        <label>Username</label>
+        <input name="username" style="width: 300px" v-model="loginUser.email" />
+      </fieldset><br>
+      <fieldset>
+        <label>Password</label>
+        <input name="password" style="width: 300px" type="password" v-model="loginUser.password" />
+      </fieldset><br>
+      <fieldset>
+        <input type="submit" name="" class="button" value="Login">
+      </fieldset>
+    </form>
 
 <alert
   :show.sync="showValidateAlert"
@@ -24,15 +24,15 @@
   placement="top"
   dismissable>
   <span class="icon-info-circled alert-icon-float-left"></span>
-  <ul>
+  <ul class="errors">
     <li v-show="!validation.email">Please provide a valid email address.</li>
     <li v-show="!validation.password">Password cannot be empty.</li>
   </ul>
 </alert>
 
-</div>
+  </div>
 
-<!--<button class="button" style="position: absolute; margin: auto; bottom: 50px; left: 0px; right: 0px;" v-on:click="login">Login</button>-->
+  <!--<button class="button" style="position: absolute; margin: auto; bottom: 50px; left: 0px; right: 0px;" v-on:click="login">Login</button>-->
 
 </template>
 
@@ -47,7 +47,8 @@ export default {
         email: '',
         password: ''
       },
-      showValidateAlert: false
+      showValidateAlert: false,
+      currentViewName: 'login'
     }
   },
   components: {
