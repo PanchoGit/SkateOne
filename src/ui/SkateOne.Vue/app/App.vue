@@ -15,9 +15,9 @@
 </template>
 
 <script>
-import LoginComponent from './components/Login.vue'
-import HomeComponent from './components/Home.vue'
-import SkateComponent from './components/Skate.vue'
+import LoginComponent from './components/login.vue'
+import HomeComponent from './components/home.vue'
+import SkateComponent from './components/skate.vue'
 
 export default {
   data () {
