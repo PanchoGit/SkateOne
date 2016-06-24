@@ -4,6 +4,82 @@
 		"selected_items":
 		[
 			[
+				"skate",
+				"skateView"
+			],
+			[
+				"lo",
+				"log"
+			],
+			[
+				"r",
+				"return"
+			],
+			[
+				"res",
+				"result"
+			],
+			[
+				"get",
+				"getSkaters"
+			],
+			[
+				"ser",
+				"service"
+			],
+			[
+				"lett",
+				"letter-spacing"
+			],
+			[
+				"b",
+				"bottom"
+			],
+			[
+				"di",
+				"display"
+			],
+			[
+				"in",
+				"inline"
+			],
+			[
+				"w",
+				"width"
+			],
+			[
+				"c",
+				"class	Attr"
+			],
+			[
+				"text-a",
+				"text-align"
+			],
+			[
+				"val",
+				"validateAlert"
+			],
+			[
+				"app",
+				"appWebDist"
+			],
+			[
+				"appW",
+				"appWeb"
+			],
+			[
+				"vue",
+				"vuejs"
+			],
+			[
+				"a",
+				"app"
+			],
+			[
+				"vu",
+				"vue"
+			],
+			[
 				"Skate",
 				"SkateComponent"
 			],
@@ -20,51 +96,27 @@
 	"buffers":
 	[
 		{
-			"file": "src/App.vue",
+			"file": "app/components/skate.vue",
 			"settings":
 			{
-				"buffer_size": 1599,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "src/components/Home.vue",
-			"settings":
-			{
-				"buffer_size": 518,
+				"buffer_size": 1573,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "src/components/Login.vue",
+			"file": "app/app.vue",
 			"settings":
 			{
-				"buffer_size": 853,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "src/components/Skate.vue",
-			"settings":
-			{
-				"buffer_size": 681,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "index.html",
-			"settings":
-			{
-				"buffer_size": 1073,
+				"buffer_size": 1577,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "package.json",
+			"file": "app/services/skaterService.js",
 			"settings":
 			{
-				"buffer_size": 934,
-				"line_ending": "Unix"
+				"buffer_size": 272,
+				"line_ending": "Windows"
 			}
 		}
 	],
@@ -106,35 +158,77 @@
 	"expanded_folders":
 	[
 		"/C/Pancho/Projects/SkateOne/src/ui/SkateOne.Vue",
-		"/C/Pancho/Projects/SkateOne/src/ui/SkateOne.Vue/css",
-		"/C/Pancho/Projects/SkateOne/src/ui/SkateOne.Vue/lib",
-		"/C/Pancho/Projects/SkateOne/src/ui/SkateOne.Vue/src",
-		"/C/Pancho/Projects/SkateOne/src/ui/SkateOne.Vue/src/components"
+		"/C/Pancho/Projects/SkateOne/src/ui/SkateOne.Vue/app",
+		"/C/Pancho/Projects/SkateOne/src/ui/SkateOne.Vue/app/components",
+		"/C/Pancho/Projects/SkateOne/src/ui/SkateOne.Vue/app/css",
+		"/C/Pancho/Projects/SkateOne/src/ui/SkateOne.Vue/app/helpers",
+		"/C/Pancho/Projects/SkateOne/src/ui/SkateOne.Vue/app/lib",
+		"/C/Pancho/Projects/SkateOne/src/ui/SkateOne.Vue/app/services"
 	],
 	"file_history":
 	[
-		"/C/Pancho/Projects/SkateOne/src/ui/SkateOne.Vue/node_modules/gulp-build/gulpfile.js",
+		"/C/Pancho/Projects/SkateOne/src/ui/SkateOne.Vue/app/lib/gridNess.js",
+		"/C/Pancho/Projects/SkateOne/src/ui/SkateOne.Vue/dist/lib/GridNess.js",
+		"/C/Pancho/Projects/SkateOne/src/ui/SkateOne.Vue/app/css/gridNess.css",
+		"/C/Pancho/Projects/Training/KnockoutInit/app.gridNess.js",
+		"/C/Pancho/Projects/SkateOne/src/ui/SkateOne.Vue/app/app.vue",
+		"/C/Pancho/Projects/Training/KnockoutInit/gridNess.js",
+		"/C/Pancho/Projects/SkateOne/src/ui/SkateOne.Vue/app/index.html",
+		"/C/Pancho/Projects/SkateOne/src/ui/SkateOne.Vue/app/components/skate.vue",
+		"/C/Pancho/Projects/SkateOne/src/ui/SkateOne.Vue/app/components/Login.vue",
+		"/C/Pancho/Projects/SkateOne/src/ui/SkateOne.Vue/app/main.js",
+		"/C/Pancho/Projects/SkateOne/src/ui/SkateOne.Vue/app/components/Skate.vue",
+		"/C/Pancho/Projects/SkateOne/src/ui/SkateOne.Vue/app/services/SkaterService.js",
+		"/C/Pancho/Projects/SkateOne/src/ui/SkateOne.Vue/app/css/App.css",
+		"/C/Pancho/Projects/SkateOne/src/ui/SkateOne.Vue/app/helpers/validators.js",
+		"/C/Pancho/Projects/SkateOne/src/ui/SkateOne.Vue/package.json",
+		"/C/Pancho/Projects/SkateOne/src/ui/SkateOne.Vue/app/services/SkaterService",
+		"/C/Pancho/Projects.GL/Mitel/dev_portal/Src/Mitel.DeveloperPortal/Mitel.devPortal.FrontEnd/app/helpers/validators.js",
+		"/C/Pancho/Projects.GL/Mitel/dev_portal/Src/Mitel.DeveloperPortal/Mitel.devPortal.FrontEnd/app/helpers/form-validate.js",
+		"/C/Pancho/Projects/SkateOne/src/ui/SkateOne.Vue/dist/css/Common.css",
+		"/C/Pancho/Projects/SkateOne/src/ui/SkateOne.Vue/app/css/Common.css",
+		"/C/Pancho/Projects/SkateOne/src/ui/SkateOne.Vue/app/App.vue",
+		"/C/Pancho/Projects.GL/Mitel/dev_portal/Src/Mitel.DeveloperPortal/Mitel.devPortal.FrontEnd/app/services/apps.js",
+		"/C/Pancho/Projects/SkateOne/src/ui/SkateOne.Vue/webpack.config.js",
+		"/C/Pancho/Projects/SkateOne/src/ui/SkateOne.Vue/npm-debug.log",
+		"/C/Pancho/Projects/SkateOne/src/ui/SkateOne.Vue/index.html",
+		"/C/Pancho/Projects.GL/Mitel/dev_portal/Src/Mitel.DeveloperPortal/Mitel.devPortal.FrontEnd/app/index.html",
+		"/C/Pancho/Projects/SkateOne/src/ui/SkateOne.Vue/gulpfile.js",
+		"/C/Pancho/Projects/SkateOne/src/ui/SkateOne.Vue/dist/main.js",
+		"/C/Pancho/Projects/SkateOne/src/ui/SkateOne.Web/Views/Shared/_Layout.cshtml",
+		"/C/Pancho/Projects/SkateOne/src/ui/SkateOne.Vue/dist/build.js",
+		"/C/Pancho/Projects/SkateOne/src/ui/SkateOne.Vue/dist/build.js.map",
+		"/C/Pancho/Projects/SkateOne/src/ui/SkateOne.Web/dist/index.html",
+		"/C/Users/francisco.rosales/Documents/Visual Studio 2013/Projects/WebApplication1/WebApplication1/Controllers/MeController.cs",
+		"/C/Users/francisco.rosales/Documents/Visual Studio 2013/Projects/WebApplication1/WebApplication1/Controllers/ManageController.cs",
+		"/C/Users/francisco.rosales/Documents/Visual Studio 2013/Projects/WebApplication1/WebApplication1/Controllers/HomeController.cs",
+		"/C/Pancho/Projects/SkateOne/src/ui/SkateOne.Vue/dist/App.js",
+		"/C/Pancho/Projects/SkateOne/src/ui/SkateOne.Vue/dist/components/Login.js",
+		"/C/Pancho/Projects/SkateOne/src/ui/SkateOne.Vue/.babelrc",
+		"/C/Pancho/Projects/SkateOne/src/ui/SkateOne.Vue/gulp-tasks/scripts.js",
+		"/C/Pancho/Projects.GL/Mitel/dev_portal/Src/Mitel.DeveloperPortal/Mitel.devPortal.FrontEnd/gulp-tasks/html.js",
+		"/C/Pancho/Projects.GL/Mitel/dev_portal/Src/Mitel.DeveloperPortal/Mitel.devPortal.FrontEnd/gulp-tasks/styles.js",
+		"/C/Pancho/Projects.GL/Mitel/dev_portal/Src/Mitel.DeveloperPortal/Mitel.devPortal.FrontEnd/gulp-tasks/scripts.js",
 		"/C/Pancho/Projects.GL/Mitel/dev_portal/Src/Mitel.DeveloperPortal/Mitel.devPortal.FrontEnd/app/app.spec.js",
 		"/C/Pancho/Projects.GL/Mitel/dev_portal/Src/Mitel.DeveloperPortal/Mitel.devPortal.FrontEnd/app/app.e2e.js",
 		"/C/Pancho/Projects.GL/Mitel/dev_portal/Src/Mitel.DeveloperPortal/Mitel.devPortal.FrontEnd/app/app.js",
+		"/C/Pancho/Projects/SkateOne/src/ui/SkateOne.Vue/.gitignore",
+		"/C/Pancho/Projects/SkateOne/src/ui/SkateOne.Vue/src/components/Skate.vue",
+		"/C/Pancho/Projects/SkateOne/src/ui/SkateOne.Vue/src/components/Login.vue",
+		"/C/Pancho/Projects/SkateOne/src/ui/SkateOne.Vue/src/components/Home.vue",
+		"/C/Pancho/Projects/SkateOne/src/ui/SkateOne.Vue/src/App.vue",
+		"/C/Pancho/Projects/SkateOne/src/ui/SkateOne.Vue/README.md",
+		"/C/Pancho/Projects/SkateOne/src/ui/SkateOne.Vue/node_modules/gulp/package.json",
+		"/C/Pancho/Projects/SkateOne/src/ui/SkateOne.Vue/node_modules/gulp-build/gulpfile.js",
 		"/C/Pancho/Projects.GL/Mitel/dev_portal/Src/Mitel.DeveloperPortal/Mitel.devPortal.FrontEnd/app/styles/_bootstrap-custom.scss",
 		"/C/Pancho/Projects.GL/Mitel/dev_portal/Src/Mitel.DeveloperPortal/Mitel.devPortal.FrontEnd/app/styles/base.scss",
 		"/C/Pancho/Projects.GL/Mitel/dev_portal/Src/Mitel.DeveloperPortal/Mitel.devPortal.FrontEnd/app/services/accounts.js",
 		"/C/Pancho/Projects.GL/Mitel/dev_portal/Src/Mitel.DeveloperPortal/Mitel.devPortal.FrontEnd/app/configuration/options.js",
 		"/C/Pancho/Projects.GL/Mitel/dev_portal/Src/Mitel.DeveloperPortal/Mitel.devPortal.FrontEnd/app/configuration/i18n.js",
 		"/C/Pancho/Projects.GL/Mitel/dev_portal/Src/Mitel.DeveloperPortal/Mitel.devPortal.FrontEnd/app/configuration/constants.js",
-		"/C/Pancho/Projects/SkateOne/src/ui/SkateOne.Vue/.babelrc",
-		"/C/Pancho/Projects/SkateOne/src/ui/SkateOne.Vue/webpack.config.js",
-		"/C/Pancho/Projects/SkateOne/src/ui/SkateOne.Vue/package.json",
-		"/C/Pancho/Projects/SkateOne/src/ui/SkateOne.Vue/README.md",
 		"/C/Pancho/Projects/SkateOne/src/ui/SkateOne.Vue/src/main.js",
 		"/C/Pancho/Projects.GL/Mitel/dev_portal/Src/Mitel.DeveloperPortal/Mitel.devPortal.FrontEnd/gulpfile.js",
-		"/C/Pancho/Projects/SkateOne/src/ui/SkateOne.Vue/src/components/Home.vue",
-		"/C/Pancho/Projects/SkateOne/src/ui/SkateOne.Vue/src/components/Login.vue",
-		"/C/Pancho/Projects/SkateOne/src/ui/SkateOne.Vue/src/components/Skate.vue",
-		"/C/Pancho/Projects/SkateOne/src/ui/SkateOne.Vue/src/App.vue",
 		"/C/Users/francisco.rosales/AppData/Roaming/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
-		"/C/Pancho/Projects/SkateOne/src/ui/SkateOne.Vue/index.html",
 		"/C/Pancho/Projects/SkateOne/src/ui/SkateOne.Vue/src/Login.vue",
 		"/C/Pancho/Projects/SkateOne/src/ui/SkateOne.Vue/lib/gridNess.css",
 		"/C/Pancho/Projects/SkateOne/src/ui/SkateOne.Vue/css/Common.css",
@@ -148,10 +242,7 @@
 		"/C/Pancho/Projects.GL/Mitel/dev_portal/Src/Mitel.DeveloperPortal/Mitel.devPortal.FrontEnd/gulp-tasks/middleware/umbracoIndex.js",
 		"/C/Pancho/Projects.GL/Mitel/dev_portal/Src/Mitel.DeveloperPortal/Mitel.devPortal.FrontEnd/gulp-tasks/middleware/middleware.js",
 		"/C/Pancho/Projects.GL/Mitel/dev_portal/Src/Mitel.DeveloperPortal/Mitel.devPortal.FrontEnd/gulp-tasks/middleware/viewRoutes.js",
-		"/C/Pancho/Projects.GL/Mitel/dev_portal/Src/Mitel.DeveloperPortal/Mitel.devPortal.FrontEnd/gulp-tasks/html.js",
-		"/C/Pancho/Projects.GL/Mitel/dev_portal/Src/Mitel.DeveloperPortal/Mitel.devPortal.FrontEnd/gulp-tasks/scripts.js",
 		"/C/Pancho/Projects.GL/Mitel/dev_portal/Src/Mitel.DeveloperPortal/Mitel.devPortal.FrontEnd/gulp-tasks/serve.js",
-		"/C/Pancho/Projects.GL/Mitel/dev_portal/Src/Mitel.DeveloperPortal/Mitel.devPortal.FrontEnd/gulp-tasks/styles.js",
 		"/C/Pancho/Projects.GL/Mitel/dev_portal/Src/Mitel.DeveloperPortal/Mitel.devPortal.FrontEnd/gulp-tasks/tests.js",
 		"/C/Pancho/Projects.GL/Mitel/dev_portal/Src/Mitel.DeveloperPortal/Mitel.devPortal.FrontEnd/karma.config.js",
 		"/C/Pancho/Projects.GL/Mitel/dev_portal/Src/Mitel.DeveloperPortal/Mitel.devPortal.FrontEnd/package.json",
@@ -203,11 +294,7 @@
 		"/C/Users/francisco.rosales/Downloads/axs-sdk-core.jar.src/classes.jar.src/com/axs/sdk/core/analytics/AnalyticsConstants.java",
 		"/C/Users/francisco.rosales/Downloads/axs-sdk-core.jar.src/classes.jar.src/com/axs/sdk/core/analytics/AnalyticsManager.java",
 		"/C/Users/francisco.rosales/Downloads/axs-sdk-core.jar.src/classes.jar.src/com/axs/sdk/core/Settings.java",
-		"/C/Users/francisco.rosales/Downloads/axs-sdk-core.jar.src/classes.jar.src/com/axs/sdk/core/Callback.java",
-		"/C/Users/francisco.rosales/Downloads/axs-sdk-core.jar.src/classes.jar.src/com/axs/sdk/core/BuildConfig.java",
-		"/C/Users/francisco.rosales/Downloads/axs-sdk-core.jar.src/res/values/values.xml",
-		"/C/Users/francisco.rosales/Downloads/axs-sdk-core.jar.src/AndroidManifest.xml",
-		"/C/Projects/consulate/docs/acl.rst"
+		"/C/Users/francisco.rosales/Downloads/axs-sdk-core.jar.src/classes.jar.src/com/axs/sdk/core/Callback.java"
 	],
 	"find":
 	{
@@ -215,9 +302,11 @@
 	},
 	"find_in_files":
 	{
-		"height": 0.0,
+		"height": 102.0,
 		"where_history":
 		[
+			"C:\\Pancho\\Projects\\SkateOne\\src\\ui\\SkateOne.Vue,*.html,*.vue,*.css,*.js",
+			"C:\\Pancho\\Projects\\SkateOne\\src\\ui\\SkateOne.Vue"
 		]
 	},
 	"find_state":
@@ -225,6 +314,42 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"containerDIV",
+			"nGrid1",
+			"th_background_light",
+			"th_background_dark",
+			"th_background_bright",
+			"status_yellow",
+			"status_red",
+			"status_green",
+			"status_blue",
+			"tr_selek_background",
+			"top_bg",
+			"th_background_telerik",
+			"th_background_light",
+			"th_background_dark",
+			"th_background_bright",
+			"th_background",
+			"status_yellow",
+			"status_red",
+			"status_green",
+			"status_blue",
+			"status_background",
+			"orden_desc",
+			"flecha_orden_desc",
+			"indicator_background.green",
+			"buttonDivDark.background.over",
+			"Searching",
+			"buttonDivDark.background",
+			"button_over.background",
+			"button.background",
+			"button_over.background",
+			"sessionStorage",
+			"/dist/",
+			"runSequence",
+			"href=\"",
+			"src=\"",
+			"\"~/",
 			"node_modules",
 			"dev",
 			"goHomeClick",
@@ -244,6 +369,11 @@
 		"regex": false,
 		"replace_history":
 		[
+			"container",
+			"/",
+			"href=\"./dist/",
+			"src=\"./dist/",
+			"\"",
 			"goHomeView",
 			"goSkateView",
 			"/status_"
@@ -257,54 +387,24 @@
 	"groups":
 	[
 		{
-			"selected": 4,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "src/App.vue",
+					"file": "app/components/skate.vue",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1599,
+						"buffer_size": 1573,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								432,
-								432
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/vue-syntax-highlight-master/vue.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 66.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 5,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "src/components/Home.vue",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 518,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								26,
-								12
+								1166,
+								1166
 							]
 						],
 						"settings":
@@ -313,123 +413,63 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "src/components/Login.vue",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 853,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								29,
-								14
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/vue-syntax-highlight-master/vue.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "src/components/Skate.vue",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 681,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								451,
-								451
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/vue-syntax-highlight-master/vue.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "index.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1073,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								955,
-								955
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 594.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
 					"type": "text"
 				},
 				{
-					"buffer": 5,
-					"file": "package.json",
+					"buffer": 1,
+					"file": "app/app.vue",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 934,
+						"buffer_size": 1577,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								234,
-								244
+								505,
+								505
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JSON.sublime-syntax",
+							"syntax": "Packages/vue-syntax-highlight-master/vue.tmLanguage",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 132.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "app/services/skaterService.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 272,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								249,
+								249
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,

@@ -21,7 +21,7 @@ module.exports = {
 	},
 	ready: function(){
 		console.log("Skate.ready");
-		//this.getSkaters();
+		this.getSkaters();
 	},
 	methods: {
 		goHomeView: function () {
