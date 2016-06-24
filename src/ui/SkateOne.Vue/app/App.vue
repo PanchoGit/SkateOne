@@ -31,9 +31,22 @@ export default {
     skateView
   },
   ready: function () {
-    this.showSlideView(config.view.home);
+    this.init();
   },
   methods: {
+    init: function(){
+      var self = this;
+      page('/home', function(){
+        self.showSlideView(config.view.home)
+      })
+      page('/skate', function(){
+        self.showSlideView(config.view.skate)
+      })
+      page('/', function(){
+        self.showSlideView(config.view.home)
+      })
+      page()
+    },
     showSlideView: function(view) {
       if(this.isCurrentView1)
       {

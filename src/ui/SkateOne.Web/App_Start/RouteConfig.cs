@@ -10,9 +10,15 @@ namespace SkateOne.Web
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
             routes.MapRoute(
-                name: "Default",
-                url: "{controller}/{action}/{id}",
-                defaults: new { controller = "Skate", action = "Index", id = UrlParameter.Optional }
+                "API",
+                "api/{controller}/{action}/{id}",
+                new { controller = "Skate", action = "Index", id = UrlParameter.Optional }
+                );
+
+            routes.MapRoute(
+                "Default",
+                "{*catchall}",
+                new { controller = "Skate", action = "Index" }
             );
         }
     }
