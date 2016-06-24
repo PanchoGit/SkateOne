@@ -44,6 +44,7 @@
 
 import {alert as Alert} from 'vue-strap'
 import validators from '../helpers/validators'
+import config from '../configuration/appConfig'
 
 export default {
   data () {
@@ -87,7 +88,7 @@ export default {
       this.showValidateAlert = true;
     },
     goHomeView: function () {
-      this.$dispatch('menu', 'home')
+      this.$dispatch(config.event.menu, config.view.home)
     }
   }
 }

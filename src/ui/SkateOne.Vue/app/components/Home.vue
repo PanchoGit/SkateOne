@@ -9,6 +9,8 @@
 </style>
 
 <script>
+import config from '../configuration/appConfig'
+
 module.exports = {
 	data: function(){
 		return {
@@ -20,7 +22,7 @@ module.exports = {
 	},
 	methods: {
 		goSkateView: function () {
-			this.$dispatch('menu', 'skateView')
+			this.$dispatch(config.event.menu, config.view.skate)
 		}
 	}
 }

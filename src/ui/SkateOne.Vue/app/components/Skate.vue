@@ -11,6 +11,7 @@
 
 <script>
 import service from '../services/skaterService'
+import config from '../configuration/appConfig'
 
 module.exports = {
 	data: function(){
@@ -20,11 +21,11 @@ module.exports = {
 	},
 	ready: function(){
 		console.log("Skate.ready");
-		this.getSkaters();
+		//this.getSkaters();
 	},
 	methods: {
 		goHomeView: function () {
-			this.$dispatch('menu', 'home')
+			this.$dispatch(config.event.menu, config.view.home)
 		},
 		getSkaters: function(){
 			var self = this;
