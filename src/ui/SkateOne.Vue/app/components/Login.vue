@@ -30,10 +30,16 @@
   placement="top"
   dismissable>
   <span class="icon-info-circled alert-icon-float-left"></span>
-  <ul class="errors">
-    <li v-show="!validation.email">Please provide a valid email address.</li>
-    <li v-show="!validation.password">Password cannot be empty.</li>
-  </ul>
+  <div style="text-align:left">
+    <div v-show="!validation.email">
+      <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+      Please provide a valid email address.
+    </div>
+    <div v-show="!validation.password">
+      <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+      Password cannot be empty.
+    </div>
+  </div>
 </alert>
 
 </div>

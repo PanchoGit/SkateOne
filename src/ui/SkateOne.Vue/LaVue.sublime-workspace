@@ -99,7 +99,7 @@
 			"file": "app/components/skate.vue",
 			"settings":
 			{
-				"buffer_size": 1573,
+				"buffer_size": 1642,
 				"line_ending": "Windows"
 			}
 		},
@@ -107,8 +107,8 @@
 			"file": "app/app.vue",
 			"settings":
 			{
-				"buffer_size": 1577,
-				"line_ending": "Unix"
+				"buffer_size": 1894,
+				"line_ending": "Windows"
 			}
 		},
 		{
@@ -167,6 +167,27 @@
 	],
 	"file_history":
 	[
+		"/C/Pancho/Projects/Invision/Databases/Scripts By Sprint/Messi/Sprint10/23102_AddReportMediaIngest.sql",
+		"/C/Pancho/Projects/Invision/Databases/Scripts By Sprint/Messi/Sprint10/23107_CreateViewMediaIngestReport.sql",
+		"/C/Pancho/Projects/ProdeLink/PlinkSQL/12.SoccerPoint.sql",
+		"/C/Projects/fixture/db/Fixture.sql",
+		"/C/Pancho/Projects/ProdeLink/PlinkFx/src/plink/view/game/prode/ProdeGroupRenderer.mxml",
+		"/C/Pancho/Projects/ProdeLink/PlinkFx/src/plink/view/game/prode/ProdeMatchRenderer.mxml",
+		"/C/Pancho/Projects/ProdeLink/PlinkFx/src/plink/view/game/prode/ProdeView.mxml",
+		"/C/Pancho/Projects/ProdeLink/PlinkFx/src/plink/model/SoccerPhase.as",
+		"/C/Pancho/Projects/ProdeLink/PlinkFx/src/plink/model/SoccerTeam.as",
+		"/C/Pancho/Projects/ProdeLink/PlinkFx/src/plink/model/SoccerMatch.as",
+		"/C/Pancho/Projects/ProdeLink/PlinkSQL/11.SoccerPhase.sql",
+		"/C/Pancho/Projects/ProdeLink/PlinkSQL/13.SoccerScore.sql",
+		"/C/Pancho/Projects/ProdeLink/PlinkSQL/14.SoccerTeam.sql",
+		"/C/Pancho/Projects/ProdeLink/PlinkSQL/9.SoccerLocation.sql",
+		"/C/Pancho/Projects/ProdeLink/PlinkSQL/10.SoccerMatch.sql",
+		"/C/Pancho/Projects/ProdeLink/PlinkSQL/5.TeamScore.sql",
+		"/C/Pancho/Projects/ProdeLink/PlinkSQL/4.Team.sql",
+		"/C/Pancho/Projects/ProdeLink/PlinkSQL/1.User.sql",
+		"/C/Pancho/Projects/ProdeLink/PlinkSQL/0.CreateDatabase.sql",
+		"/C/Pancho/Projects/ProdeLink/PlinkSQL/0.CreateSchema.sql",
+		"/C/Pancho/Projects/SkateOne/src/ui/SkateOne.Vue/app/components/Login.vue",
 		"/C/Pancho/Projects/SkateOne/src/ui/SkateOne.Vue/app/lib/gridNess.js",
 		"/C/Pancho/Projects/SkateOne/src/ui/SkateOne.Vue/dist/lib/GridNess.js",
 		"/C/Pancho/Projects/SkateOne/src/ui/SkateOne.Vue/app/css/gridNess.css",
@@ -175,7 +196,6 @@
 		"/C/Pancho/Projects/Training/KnockoutInit/gridNess.js",
 		"/C/Pancho/Projects/SkateOne/src/ui/SkateOne.Vue/app/index.html",
 		"/C/Pancho/Projects/SkateOne/src/ui/SkateOne.Vue/app/components/skate.vue",
-		"/C/Pancho/Projects/SkateOne/src/ui/SkateOne.Vue/app/components/Login.vue",
 		"/C/Pancho/Projects/SkateOne/src/ui/SkateOne.Vue/app/main.js",
 		"/C/Pancho/Projects/SkateOne/src/ui/SkateOne.Vue/app/components/Skate.vue",
 		"/C/Pancho/Projects/SkateOne/src/ui/SkateOne.Vue/app/services/SkaterService.js",
@@ -274,27 +294,7 @@
 		"/C/Users/francisco.rosales/Downloads/axs-sdk-core.jar.src/classes.jar.src/com/axs/sdk/core/managers/ResourceManager.java",
 		"/C/Users/francisco.rosales/Downloads/axs-sdk-core.jar.src/classes.jar.src/com/axs/sdk/core/http/DefaultHttpClient.java",
 		"/C/Users/francisco.rosales/Downloads/axs-sdk-core.jar.src/classes.jar.src/com/axs/sdk/core/http/HttpClient.java",
-		"/C/Users/francisco.rosales/Downloads/axs-sdk-core.jar.src/classes.jar.src/com/axs/sdk/core/http/HttpClientFactory.java",
-		"/C/Users/francisco.rosales/Downloads/axs-sdk-core.jar.src/classes.jar.src/com/axs/sdk/core/http/HttpRequest.java",
-		"/C/Users/francisco.rosales/Downloads/axs-sdk-core.jar.src/classes.jar.src/com/axs/sdk/core/exceptions/NetworkException.java",
-		"/C/Users/francisco.rosales/Downloads/axs-sdk-core.jar.src/classes.jar.src/com/axs/sdk/core/events/HttpClientCallback.java",
-		"/C/Users/francisco.rosales/Downloads/axs-sdk-core.jar.src/classes.jar.src/com/axs/sdk/core/enums/BarcodeStatus.java",
-		"/C/Users/francisco.rosales/Downloads/axs-sdk-core.jar.src/classes.jar.src/com/axs/sdk/core/enums/Environment.java",
-		"/C/Users/francisco.rosales/Downloads/axs-sdk-core.jar.src/classes.jar.src/com/axs/sdk/core/enums/RequestMethod.java",
-		"/C/Users/francisco.rosales/Downloads/axs-sdk-core.jar.src/classes.jar.src/com/axs/sdk/core/enums/SDKType.java",
-		"/C/Users/francisco.rosales/Downloads/axs-sdk-core.jar.src/classes.jar.src/com/axs/sdk/core/enums/TargetAPIType.java",
-		"/C/Users/francisco.rosales/Downloads/axs-sdk-core.jar.src/classes.jar.src/com/axs/sdk/core/database/provider/AXSContentProvider.java",
-		"/C/Users/francisco.rosales/Downloads/axs-sdk-core.jar.src/classes.jar.src/com/axs/sdk/core/database/BaseDBObject.java",
-		"/C/Users/francisco.rosales/Downloads/axs-sdk-core.jar.src/classes.jar.src/com/axs/sdk/core/database/DatabaseHelper.java",
-		"/C/Users/francisco.rosales/Downloads/axs-sdk-core.jar.src/classes.jar.src/com/axs/sdk/core/database/EventDB.java",
-		"/C/Users/francisco.rosales/Downloads/axs-sdk-core.jar.src/classes.jar.src/com/axs/sdk/core/database/OrderDB.java",
-		"/C/Users/francisco.rosales/Downloads/axs-sdk-core.jar.src/classes.jar.src/com/axs/sdk/core/database/ProductDB.java",
-		"/C/Users/francisco.rosales/Downloads/axs-sdk-core.jar.src/classes.jar.src/com/axs/sdk/core/database/TicketDB.java",
-		"/C/Users/francisco.rosales/Downloads/axs-sdk-core.jar.src/classes.jar.src/com/axs/sdk/core/database/VenueDB.java",
-		"/C/Users/francisco.rosales/Downloads/axs-sdk-core.jar.src/classes.jar.src/com/axs/sdk/core/analytics/AnalyticsConstants.java",
-		"/C/Users/francisco.rosales/Downloads/axs-sdk-core.jar.src/classes.jar.src/com/axs/sdk/core/analytics/AnalyticsManager.java",
-		"/C/Users/francisco.rosales/Downloads/axs-sdk-core.jar.src/classes.jar.src/com/axs/sdk/core/Settings.java",
-		"/C/Users/francisco.rosales/Downloads/axs-sdk-core.jar.src/classes.jar.src/com/axs/sdk/core/Callback.java"
+		"/C/Users/francisco.rosales/Downloads/axs-sdk-core.jar.src/classes.jar.src/com/axs/sdk/core/http/HttpClientFactory.java"
 	],
 	"find":
 	{
@@ -314,6 +314,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			" aria-hidden=\"true\"",
 			"containerDIV",
 			"nGrid1",
 			"th_background_light",
@@ -387,7 +388,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
@@ -396,15 +397,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1573,
+						"buffer_size": 1642,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1166,
-								1166
+								655,
+								655
 							]
 						],
 						"settings":
@@ -413,10 +414,10 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 594.0,
+						"translation.y": 222.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
@@ -425,15 +426,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1577,
+						"buffer_size": 1894,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								505,
-								505
+								468,
+								468
 							]
 						],
 						"settings":
@@ -443,10 +444,10 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 132.0,
+						"translation.y": 165.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
@@ -475,7 +476,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 2,
 					"type": "text"
 				}
 			]

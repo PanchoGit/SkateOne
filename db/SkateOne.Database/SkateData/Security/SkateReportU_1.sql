@@ -1,3 +1,3 @@
 ﻿CREATE LOGIN [SkateReportU]
-    WITH PASSWORD = N'ipsxAasx?&vr}sd&ma}sfg|rmsFT7_&#$!~<yGwkdk7quvxt', SID = 0x1342B55B2F1D3043B9F5D9C191880CA5, DEFAULT_DATABASE = [SkateOne], DEFAULT_LANGUAGE = [us_english], CHECK_POLICY = OFF;
+    WITH PASSWORD = N'xipohlb7tqcuYdoiyhzmrab}msFT7_&#$!~<dq{gONlqy<zz', SID = 0xE02D71ADC7BB38499FE75F0EAA7853A3, DEFAULT_DATABASE = [SkateOne], DEFAULT_LANGUAGE = [us_english], CHECK_POLICY = OFF;
 

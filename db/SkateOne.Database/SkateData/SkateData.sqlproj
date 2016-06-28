@@ -106,21 +106,18 @@
   <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
   <ItemGroup>
     <Folder Include="Properties" />
+    <Folder Include="Scripts" />
     <Folder Include="Skate\" />
     <Folder Include="Skate\Tables\" />
     <Folder Include="Report\" />
     <Folder Include="Report\Tables\" />
     <Folder Include="Security\" />
-    <Folder Include="Report\Views\" />
-    <Folder Include="Data" />
-    <Folder Include="Snapshots" />
   </ItemGroup>
   <ItemGroup>
-    <Build Include="Skate\Tables\Type.sql">
-      <AnsiNulls>On</AnsiNulls>
-      <QuotedIdentifier>On</QuotedIdentifier>
-    </Build>
-    <Build Include="Skate\Tables\Location.sql">
+    <Build Include="scripts\001.SkateOne.sql" />
+    <Build Include="Scripts\002.Skate.Tables.sql" />
+    <Build Include="Scripts\003.Report.Tables.sql" />
+    <Build Include="Skate\Tables\Score.sql">
       <AnsiNulls>On</AnsiNulls>
       <QuotedIdentifier>On</QuotedIdentifier>
     </Build>
@@ -128,11 +125,19 @@
       <AnsiNulls>On</AnsiNulls>
       <QuotedIdentifier>On</QuotedIdentifier>
     </Build>
+    <Build Include="Skate\Tables\Location.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="Skate\Tables\Type.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
     <Build Include="Skate\Tables\Skater.sql">
       <AnsiNulls>On</AnsiNulls>
       <QuotedIdentifier>On</QuotedIdentifier>
     </Build>
-    <Build Include="Skate\Tables\Score.sql">
+    <Build Include="Report\Tables\Skater.sql">
       <AnsiNulls>On</AnsiNulls>
       <QuotedIdentifier>On</QuotedIdentifier>
     </Build>
@@ -141,19 +146,13 @@
       <QuotedIdentifier>On</QuotedIdentifier>
     </Build>
     <Build Include="Security\SkateU.sql" />
-    <Build Include="Security\SkateU_1.sql" />
     <Build Include="Security\SkateReportU.sql" />
-    <Build Include="Security\SkateReportU_1.sql" />
-    <Build Include="Security\Report.sql" />
     <Build Include="Security\Skate.sql" />
-    <Build Include="Security\Permissions.sql" />
-    <Build Include="Report\Views\ScoreVw.sql">
-      <AnsiNulls>On</AnsiNulls>
-      <QuotedIdentifier>On</QuotedIdentifier>
-    </Build>
+    <Build Include="Security\Report.sql" />
+    <Build Include="Security\SkateU_1.sql" />
+    <Build Include="Security\SkateReportU_1.sql" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Data\Skate.Skater.data.sql" />
-    <None Include="Snapshots\SkateData_20160605_14-43-58.dacpac" />
+    <None Include="Scripts\004.Data.sql" />
   </ItemGroup>
 </Project>
