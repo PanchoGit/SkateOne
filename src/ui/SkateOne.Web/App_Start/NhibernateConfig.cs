@@ -5,12 +5,16 @@ using SkateOne.Application.Data;
 
 namespace SkateOne.Web
 {
-    public class AppNhSessionFactoryConfig
+    public class NhibernateConfig
     {
         public static ISessionFactory BuildSessionFactory()
         {
             return Fluently.Configure()
-                .Database(MsSqlConfiguration.MsSql2012.ConnectionString(_ => _.FromConnectionStringWithKey("default")))
+                .Database(
+                    MsSqlConfiguration.MsSql2012
+                    .ConnectionString(_ => _.FromConnectionStringWithKey("default"))
+                    .DefaultSchema("Skate")
+                    )
                 .Mappings(m => m.FluentMappings.AddFromAssemblyOf<SkaterData>())
                 .BuildSessionFactory();
         }

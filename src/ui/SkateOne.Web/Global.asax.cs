@@ -25,7 +25,7 @@ namespace SkateOne.Web
 
             var builder = new ContainerBuilder();
 
-            SetupIoC.Autofac(builder);
+            AutofacConfig.Register(builder);
 
             var container = builder.Build();
 

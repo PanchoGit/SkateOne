@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Reflection;
 using Autofac;
 using Autofac.Integration.Mvc;
 using Autofac.Integration.WebApi;
@@ -8,12 +7,12 @@ using SkateOne.Application.Data;
 
 namespace SkateOne.Web
 {
-    public static class SetupIoC
+    public static class AutofacConfig
     {
         private const string ServiceAssemblyEndName = "Service";
         private const string DataAssemblyEndName = "Data";
 
-        public static void Autofac(ContainerBuilder builder)
+        public static void Register(ContainerBuilder builder)
         {
             builder.RegisterControllers(typeof(MvcApplication).Assembly);
 
@@ -32,7 +31,7 @@ namespace SkateOne.Web
                 .As<ISession>()
                 .InstancePerLifetimeScope();
 
-            builder.Register(c => AppNhSessionFactoryConfig.BuildSessionFactory())
+            builder.Register(c => NhibernateConfig.BuildSessionFactory())
                    .As<ISessionFactory>()
                    .SingleInstance();
         }
