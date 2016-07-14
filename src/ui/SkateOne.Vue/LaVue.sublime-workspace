@@ -104,10 +104,18 @@
 			}
 		},
 		{
+			"file": "app/components/Login.vue",
+			"settings":
+			{
+				"buffer_size": 2708,
+				"line_ending": "Windows"
+			}
+		},
+		{
 			"file": "app/app.vue",
 			"settings":
 			{
-				"buffer_size": 1894,
+				"buffer_size": 2190,
 				"line_ending": "Windows"
 			}
 		},
@@ -414,7 +422,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 222.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
@@ -422,19 +430,49 @@
 				},
 				{
 					"buffer": 1,
-					"file": "app/app.vue",
-					"semi_transient": false,
+					"file": "app/components/Login.vue",
+					"semi_transient": true,
 					"settings":
 					{
-						"buffer_size": 1894,
+						"buffer_size": 2708,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								468,
-								468
+								458,
+								483
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/vue-syntax-highlight-master/vue.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": -0.0,
+						"translation.y": 1518.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "app/app.vue",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2190,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								523,
+								537
 							]
 						],
 						"settings":
@@ -447,11 +485,11 @@
 						"translation.y": 165.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
-					"buffer": 2,
+					"buffer": 3,
 					"file": "app/services/skaterService.js",
 					"semi_transient": false,
 					"settings":
@@ -476,7 +514,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 3,
 					"type": "text"
 				}
 			]

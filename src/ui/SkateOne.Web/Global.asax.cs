@@ -24,13 +24,9 @@ namespace SkateOne.Web
             AuthConfig.RegisterAuth();
 
             var builder = new ContainerBuilder();
-
             AutofacConfig.Register(builder);
-
             var container = builder.Build();
-
             DependencyResolver.SetResolver(new AutofacDependencyResolver(container));
-
             GlobalConfiguration.Configuration.DependencyResolver = new AutofacWebApiDependencyResolver(container);
         }
     }
