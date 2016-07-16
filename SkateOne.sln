@@ -5,17 +5,28 @@ VisualStudioVersion = 12.0.40629.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{85A4E349-A9EE-4CB1-908C-D075AB5D7B69}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ui", "ui", "{E53488FF-BE88-4063-9CF9-DA78BD484D03}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.ui", "2.ui", "{E53488FF-BE88-4063-9CF9-DA78BD484D03}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "db", "db", "{BF9C8BC4-2267-4767-B786-E94C2135BA92}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "app", "app", "{2A2E2B2A-7C27-4680-87FF-AA53468268A3}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.app", "1.app", "{2A2E2B2A-7C27-4680-87FF-AA53468268A3}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SkateOne.Web", "src\ui\SkateOne.Web\SkateOne.Web.csproj", "{9DE0A14E-61E7-4F7B-9AC1-6AEB6C04530C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SkateOne.Application", "src\app\SkateOne.Application\SkateOne.Application.csproj", "{4980232C-1E73-4ED3-8035-F24E2F9924C0}"
 EndProject
 Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "SkateData", "db\SkateOne.Database\SkateData\SkateData.sqlproj", "{CEBF083B-E13C-4F4B-A7E2-951B95545AEF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{E6219164-5AC8-4EBD-A5DC-C7FF9EAA522D}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3.test", "3.test", "{F29630DF-9CAD-46FE-B13A-E8D6A5F7CF28}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SkateOne.UnitTest", "src\test\SkateOne.UnitTest\SkateOne.UnitTest.csproj", "{08F56031-880F-4D21-B980-7ED1CF061206}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -37,6 +48,10 @@ Global
 		{CEBF083B-E13C-4F4B-A7E2-951B95545AEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CEBF083B-E13C-4F4B-A7E2-951B95545AEF}.Release|Any CPU.Build.0 = Release|Any CPU
 		{CEBF083B-E13C-4F4B-A7E2-951B95545AEF}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{08F56031-880F-4D21-B980-7ED1CF061206}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{08F56031-880F-4D21-B980-7ED1CF061206}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{08F56031-880F-4D21-B980-7ED1CF061206}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{08F56031-880F-4D21-B980-7ED1CF061206}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -47,5 +62,7 @@ Global
 		{9DE0A14E-61E7-4F7B-9AC1-6AEB6C04530C} = {E53488FF-BE88-4063-9CF9-DA78BD484D03}
 		{4980232C-1E73-4ED3-8035-F24E2F9924C0} = {2A2E2B2A-7C27-4680-87FF-AA53468268A3}
 		{CEBF083B-E13C-4F4B-A7E2-951B95545AEF} = {BF9C8BC4-2267-4767-B786-E94C2135BA92}
+		{F29630DF-9CAD-46FE-B13A-E8D6A5F7CF28} = {85A4E349-A9EE-4CB1-908C-D075AB5D7B69}
+		{08F56031-880F-4D21-B980-7ED1CF061206} = {F29630DF-9CAD-46FE-B13A-E8D6A5F7CF28}
 	EndGlobalSection
 EndGlobal
