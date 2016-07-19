@@ -409,6 +409,18 @@
       <Project>{4980232C-1E73-4ED3-8035-F24E2F9924C0}</Project>
       <Name>SkateOne.Application</Name>
     </ProjectReference>
+    <ProjectReference Include="..\..\common\Common.Data\Common.Data.csproj">
+      <Project>{ABCC0C08-27E4-4D36-929A-3CC91250C71A}</Project>
+      <Name>Common.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\data\SkateOne.Data.Ado\SkateOne.Data.Ado.csproj">
+      <Project>{4cc1e1a2-8219-46d2-a6af-86a37086be39}</Project>
+      <Name>SkateOne.Data.Ado</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\data\SkateOne.Data\SkateOne.Data.csproj">
+      <Project>{21D628B1-80DB-4A29-A3E9-86CF8EC98266}</Project>
+      <Name>SkateOne.Data</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

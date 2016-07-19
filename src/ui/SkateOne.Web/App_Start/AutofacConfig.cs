@@ -1,9 +1,9 @@
 ﻿using System;
+using System.Configuration;
 using Autofac;
 using Autofac.Integration.Mvc;
 using Autofac.Integration.WebApi;
 using NHibernate;
-using SkateOne.Application.Data;
 
 namespace SkateOne.Web
 {
@@ -24,13 +24,26 @@ namespace SkateOne.Web
             builder.RegisterAssemblyTypes(AppDomain.CurrentDomain.GetAssemblies())
                 .Where(s => s.Name.EndsWith(DataAssemblyEndName))
                 .AsImplementedInterfaces();
-            builder.RegisterGeneric(typeof(RepositoryBase<>))
-                .AsImplementedInterfaces();
 
+            //SetAdoConfig(builder);
+            SetNhibernateConfig(builder);
+        }
+
+        private static void SetAdoConfig(ContainerBuilder builder)
+        {
+            builder.RegisterGeneric(typeof(Data.Ado.Base.RepositoryBase<>))
+                .AsImplementedInterfaces()
+                .WithParameter(new TypedParameter(typeof(string), ConfigurationManager.ConnectionStrings["default"].ToString()))
+                ;
+        }
+
+        private static void SetNhibernateConfig(ContainerBuilder builder)
+        {
+            builder.RegisterGeneric(typeof(Data.Base.RepositoryBase<>))
+                .AsImplementedInterfaces();
             builder.Register(c => c.Resolve<ISessionFactory>().OpenSession())
                 .As<ISession>()
                 .InstancePerLifetimeScope();
-
             builder.Register(c => NhibernateConfig.BuildSessionFactory())
                    .As<ISessionFactory>()
                    .SingleInstance();

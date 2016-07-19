@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using Common.Data.Base;
 using SkateOne.Application.Model;
 
 namespace SkateOne.Application.Data

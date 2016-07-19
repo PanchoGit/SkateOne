@@ -1,9 +1,10 @@
 ﻿using System.Collections.Generic;
+using Common.Data.Base;
 using NHibernate;
 
-namespace SkateOne.Application.Data
+namespace SkateOne.Data.Base
 {
-    public class RepositoryBase<T> : IRepositoryBase<T> where T : class 
+    public class RepositoryBase<T> : IRepositoryBase<T> where T : class
     {
         protected ISession Session { get; private set; }
 
