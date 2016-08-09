@@ -1,5 +1,5 @@
 ﻿using System.Web.Mvc;
-using SkateOne.Application.Service;
+using SkateOne.Service;
 
 namespace SkateOne.Web.Controllers
 {

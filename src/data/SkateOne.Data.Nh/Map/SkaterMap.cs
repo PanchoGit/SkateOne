@@ -1,7 +1,7 @@
 ﻿using FluentNHibernate.Mapping;
-using SkateOne.Application.Model;
+using SkateOne.Domain;
 
-namespace SkateOne.Application.DataMap
+namespace SkateOne.Data.Nh.Map
 {
     public class SkaterMap : ClassMap<Skater>
     {

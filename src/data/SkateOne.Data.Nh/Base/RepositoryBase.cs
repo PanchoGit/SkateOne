@@ -2,7 +2,7 @@
 using Common.Data.Base;
 using NHibernate;
 
-namespace SkateOne.Data.Base
+namespace SkateOne.Data.Nh.Base
 {
     public class RepositoryBase<T> : IRepositoryBase<T> where T : class
     {

@@ -55,10 +55,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DataMap\SkaterMap.cs" />
-    <Compile Include="Data\ISkaterData.cs" />
-    <Compile Include="Data\SkaterData.cs" />
-    <Compile Include="Model\Skater.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Service\ISkaterService.cs" />
     <Compile Include="Service\SkaterService.cs" />
@@ -78,6 +74,10 @@
     <ProjectReference Include="..\..\data\SkateOne.Data\SkateOne.Data.csproj">
       <Project>{21D628B1-80DB-4A29-A3E9-86CF8EC98266}</Project>
       <Name>SkateOne.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\domain\SkateOne.Domain\SkateOne.Domain.csproj">
+      <Project>{473ae5b9-9bbc-4b11-a054-21033f085d7d}</Project>
+      <Name>SkateOne.Domain</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

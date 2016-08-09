@@ -1,8 +1,8 @@
 ﻿using System.Collections.Generic;
 using Moq;
-using SkateOne.Application.Data;
-using SkateOne.Application.Model;
-using SkateOne.Application.Service;
+using SkateOne.Data;
+using SkateOne.Domain;
+using SkateOne.Service;
 using Xunit;
 
 namespace SkateOne.UnitTest.Service

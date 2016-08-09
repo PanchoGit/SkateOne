@@ -47,6 +47,10 @@
       <Project>{ABCC0C08-27E4-4D36-929A-3CC91250C71A}</Project>
       <Name>Common.Data</Name>
     </ProjectReference>
+    <ProjectReference Include="..\..\domain\SkateOne.Domain\SkateOne.Domain.csproj">
+      <Project>{473AE5B9-9BBC-4B11-A054-21033F085D7D}</Project>
+      <Name>SkateOne.Domain</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

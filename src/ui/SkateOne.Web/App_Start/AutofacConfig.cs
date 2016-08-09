@@ -25,8 +25,8 @@ namespace SkateOne.Web
                 .Where(s => s.Name.EndsWith(DataAssemblyEndName))
                 .AsImplementedInterfaces();
 
-            //SetAdoConfig(builder);
-            SetNhibernateConfig(builder);
+            SetAdoConfig(builder);
+            //SetNhibernateConfig(builder);
         }
 
         private static void SetAdoConfig(ContainerBuilder builder)
@@ -39,7 +39,7 @@ namespace SkateOne.Web
 
         private static void SetNhibernateConfig(ContainerBuilder builder)
         {
-            builder.RegisterGeneric(typeof(Data.Base.RepositoryBase<>))
+            builder.RegisterGeneric(typeof(Data.Nh.Base.RepositoryBase<>))
                 .AsImplementedInterfaces();
             builder.Register(c => c.Resolve<ISessionFactory>().OpenSession())
                 .As<ISession>()

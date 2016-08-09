@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
 using Common.Data.Base;
+using SkateOne.Domain;
 
 namespace SkateOne.Data.Ado.Base
 {
@@ -10,7 +11,7 @@ namespace SkateOne.Data.Ado.Base
     {
         private readonly SqlConnection connection;
 
-        private Dictionary<string, string> sqlDictionary;
+        private Dictionary<Type, string> sqlDictionary;
 
         public RepositoryBase(string connectionString)
         {
@@ -20,16 +21,15 @@ namespace SkateOne.Data.Ado.Base
 
         private void SetDictionary()
         {
-            sqlDictionary = new Dictionary<string, string>
+            sqlDictionary = new Dictionary<Type, string>
             {
-                {"Skater", "SELECT TOP 1000 Id, Name, Brand, Stance FROM Skate.Skater"}
+                {typeof(Skater), "SELECT TOP 1000 Id, Name, Brand, Stance FROM Skate.Skater"}
             };
         }
 
         public IEnumerable<T> GetAll()
         {
-            var className = typeof (T).Name;
-            var sqlText = sqlDictionary[className];
+            var sqlText = sqlDictionary[typeof(T)];
 
             var result = new List<T>();
             using (connection)

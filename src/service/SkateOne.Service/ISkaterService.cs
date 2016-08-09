@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using SkateOne.Domain;
 
-namespace SkateOne.Application.Service
+namespace SkateOne.Service
 {
     public interface ISkaterService
     {

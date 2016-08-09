@@ -1,8 +1,8 @@
 ﻿using System.Collections.Generic;
-using SkateOne.Application.Data;
+using SkateOne.Data;
 using SkateOne.Domain;
 
-namespace SkateOne.Application.Service
+namespace SkateOne.Service
 {
     public class SkaterService : ISkaterService
     {

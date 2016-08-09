@@ -1,7 +1,7 @@
 ﻿using FluentNHibernate.Cfg;
 using FluentNHibernate.Cfg.Db;
 using NHibernate;
-using SkateOne.Application.Data;
+using SkateOne.Data.Nh.Map;
 
 namespace SkateOne.Web
 {
@@ -15,7 +15,7 @@ namespace SkateOne.Web
                     .ConnectionString(_ => _.FromConnectionStringWithKey("default"))
                     .DefaultSchema("Skate")
                     )
-                .Mappings(m => m.FluentMappings.AddFromAssemblyOf<SkaterData>())
+                .Mappings(m => m.FluentMappings.AddFromAssemblyOf<SkaterMap>())
                 .BuildSessionFactory();
         }
     }

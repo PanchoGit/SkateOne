@@ -1,4 +1,4 @@
-﻿namespace SkateOne.Application.Model
+﻿namespace SkateOne.Domain
 {
     public class Skater
     {
