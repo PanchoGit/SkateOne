@@ -25,8 +25,8 @@ namespace SkateOne.Web
                 .Where(s => s.Name.EndsWith(DataAssemblyEndName))
                 .AsImplementedInterfaces();
 
-            SetAdoConfig(builder);
-            //SetNhibernateConfig(builder);
+            //SetAdoConfig(builder);
+            SetNhibernateConfig(builder);
         }
 
         private static void SetAdoConfig(ContainerBuilder builder)
