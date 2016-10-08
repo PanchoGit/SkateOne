@@ -375,6 +375,7 @@
     </Content>
     <Content Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
+      <SubType>Designer</SubType>
     </Content>
     <Content Include="Content\Site.css" />
     <Content Include="Scripts\_references.js" />
@@ -467,4 +468,13 @@
   </Target>
   <Target Name="AfterBuild">
   </Target> -->
+  <Target Name="Deploy">
+    <Delete Files="%(WebProject.SourceFolder)\Web.Config" />
+    <Copy
+      SourceFiles="%(WebProject.SourceFolder)\Web.Config.local"
+      DestinationFiles="%(WebProject.SourceFolder)\Web.Config" />
+    <Folder.Copy
+      Source="%(WebProject.SourceFolder)"
+      Destination="C:\Projects\Deploys\%(WebProject.WebName)" />
+  </Target>
 </Project>
