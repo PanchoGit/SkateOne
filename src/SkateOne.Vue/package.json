@@ -1,5 +1,6 @@
 {
   "name": "lavue",
+  "version": "1.0.0",
   "description": "A Vue.js project",
   "author": "Francisco <francisco.rosales@globallogic.com>",
   "private": true,
